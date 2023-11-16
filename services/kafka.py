@@ -16,12 +16,12 @@ def kafka_producer(row):
     )
 
     message = row.to_dict()
-    producer.send('kafka_happiness', value=message)
+    producer.send('kafka-happiness', value=message)
     print("Message sent")
 
 def kafka_consumer():
     consumer = KafkaConsumer(
-        'kafka_happiness',
+        'kafka-happiness',
         enable_auto_commit=True,
         group_id='my-group-1',
         value_deserializer=lambda m: loads(m.decode('utf-8')),
