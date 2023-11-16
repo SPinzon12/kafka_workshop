@@ -19,20 +19,22 @@ To start using the project, follow these steps:
    - Clone the project repository in your development environment.
 
 2. **Install the Required Libraries:**
-   - Install the necessary libraries listed in the `requirements.txt` file. You can do this using a package manager like `pip` in Python. Run the following command:
+   - Install the necessary libraries listed in the `requirements.txt` file. You can do this using a package manager like pip in Python. Run the following command:
+
      ```
      pip install -r requirements.txt
      ```
 
 3. **Configure the PostgreSQL Database Connection:**
    - Create a `db_config.json` file in the project root directory.
-    ```json
-    {
-        "user": "your_postgres_username",
-        "password": "your_postgres_password",
-        "database": "your_postgres_database"
-    }
-    ```
+
+        ```json
+        {
+            "user": "your_postgres_username",
+            "password": "your_postgres_password",
+            "database": "your_postgres_database"
+        }
+        ```
 
 4. **Setting up Kafka:**
    - Run Docker Compose:
@@ -60,11 +62,11 @@ To start using the project, follow these steps:
         python kafka_producer.py
         ```
 
-        `**Note:**` Make sure to run the consumer first.
+        **Note:** Make sure to run the consumer first.
 
 
 ## Contact
-If you have any questions, please feel free to contact me via [email](sampinval@gmail.com).
+If you have any questions, please feel free to contact me via [sampinval@gmail.com].
 
 
 
